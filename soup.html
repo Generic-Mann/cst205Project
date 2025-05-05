@@ -1,0 +1,25 @@
+
+{{ bootstrap.load_css() }}
+<body>
+<div class="container mt-4">
+
+    <h2>Images</h2>
+    <ul class="list-group">
+        {% for item in images %}
+        <li class="list-group-item">
+            <img src="{{ item.src }}" class="w-50 img-fluid"/>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <h2 class="mt-5">Text Paragraphs</h2>
+    <ul class="list-group">
+        {% for paragraph in texts %}
+        <li class="list-group-item">{{ paragraph }}</li>
+        {% endfor %}
+    </ul>
+
+</div>
+{{ bootstrap.load_js() }}
+</body>
+</html>
