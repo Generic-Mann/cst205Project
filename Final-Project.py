@@ -14,6 +14,8 @@ app.config['SECRET_KEY'] = 'csumb-otter'
 bootstrap = Bootstrap5(app)
 
 Links = None
+images = None
+texts = None
 
 def webscrape(web):
     my_site=str(web)
@@ -44,7 +46,7 @@ def index():
 
 @app.route('/text_to_speech.html', methods=('GET', 'POST'))
 def tts():
-    return render_template('text_to_speech.html', Links=Links)
+    return render_template('text_to_speech.html', )
 
 
 @app.route('/colorblind_value_converter.html')
