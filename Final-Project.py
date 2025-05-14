@@ -31,17 +31,6 @@ def webscrape(web):
 
     return images, texts
 
-class Playlist(FlaskForm):
-    song_title = StringField(
-        'Song Title', 
-        validators=[DataRequired()]
-    )
-playlist = []
-def store_song(my_song):
-    playlist.append(dict(
-        song = my_song,
-        date = datetime.today()
-    ))
 
 
 
@@ -55,12 +44,7 @@ def index():
 
 @app.route('/text_to_speech.html', methods=('GET', 'POST'))
 def tts():
-    form = Playlist()
-    if form.validate_on_submit():
-        store_song(form.song_title.data)
-        print[playlist[0]]
-        return redirect('/')
-    return render_template('text_to_speech.html', form=form)
+    return render_template('text_to_speech.html', Links=Links)
 
 
 @app.route('/colorblind_value_converter.html')
