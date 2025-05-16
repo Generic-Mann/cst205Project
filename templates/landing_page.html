@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+              {{ bootstrap.load_css() }}
+        <title>
+            Menu
+        </title>
+                                <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            border: 10px solid black;
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none; /* Removes underline */
+            color: black; /* Text color */
+            display: block; /* Makes the box behave like a button */
+            border-radius: 0px; /* Rounded corners */
+        }
+
+        .box:hover {
+            background-color: rgb(0, 0, 0); /* Changes color on hover */
+        }
+            </style>
+    </head>
+    <meta charset="UTF-8">
+    <body>
+        <h1>Sample heading!</h1>
+            <a href="colorblind_value_converter.html" class="box">colorblind_value_converter</a>
+        <h1>Sample heading!</h1>
+            <a href="text_to_speech.html" class="box">text_to_speech</a>
+               {{ bootstrap.load_js() }}
+    </body>
+</html>
