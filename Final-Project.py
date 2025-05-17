@@ -1,3 +1,12 @@
+"""
+Course: CST205 - Multimedia Design & Programming
+Roles:
+Michael Garcia: Beautiful Soup
+Christopher Morales: Colorblind Filter
+Valeria Arteaga-Higueros: UI
+Oscar Aviles-Saldana: Landing Page
+"""
+
 from flask import Flask, render_template, flash, redirect, request, url_for
 from flask_bootstrap import Bootstrap5
 from urllib.request import urlopen
@@ -13,6 +22,12 @@ app.config['SECRET_KEY'] = 'csumb-otter'
 bootstrap = Bootstrap5(app)
 
 Links = None
+
+"""
+Beautiful Soup
+web scrapes a website given by the user and displays
+The images and text of the page.
+"""
 
 def webscrape(web):
     my_site=str(web)
@@ -43,6 +58,13 @@ def index():
         return render_template('soup.html', images=images, texts=texts)
     return render_template('landing_page.html')
 
+
+"""
+Colorblind Filter
+This function takes in the user-selected colorblind
+type and convert the images from the website using
+a filter and displays the images accordingly.
+"""
 
 # @app.route('/colorblind_value_converter', methods=('GET', 'POST'))
 # def cvc():
