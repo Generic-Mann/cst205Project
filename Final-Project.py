@@ -1,10 +1,13 @@
 """
 Course: CST205 - Multimedia Design & Programming
-Roles:
+Abstract: This code will take in the URL given by the user and display 
+the text and images while also allowing the user to display the images through a colorblind filter.
+Authors and roles:
 Michael Garcia: Beautiful Soup
 Christopher Morales: Colorblind Filter
 Valeria Arteaga-Higueros: UI
 Oscar Aviles-Saldana: Landing Page
+Date: 05/16/25
 """
 
 from flask import Flask, render_template, flash, redirect, request, url_for
