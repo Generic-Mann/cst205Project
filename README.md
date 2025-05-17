@@ -3,7 +3,7 @@ Repository for CST205 Multimedia and Design Project - Accessibility Website Dict
 
 Name of team members: Michael Garcia, Oscar Aviles-Saldana, Valeria Arteaga-Higueros, Christopher Morales
 
-Completed: 05/14/25
+Completed: 05/16/25
 
 How to run: using the system terminal, navigate to the folder 'cst205Project-main' and use 'flask --app Final-Project run', copy the given URL address into a search engine.
 
