@@ -5,7 +5,7 @@ Name of team members: Michael Garcia, Oscar Aviles-Saldana, Valeria Arteaga-Higu
 
 Completed: 05/16/25
 
-How to run: using the system terminal, navigate to the folder 'cst205Project-main' and use 'flask --app Final-Project run', copy the given URL address into a search engine.
+How to run: using the system terminal, navigate to the folder 'cst205Project-main' and use 'flask --app final_project run', copy the given URL address into a search engine.
 
 Github Link: https://github.com/Generic-Mann/cst205Project
 
